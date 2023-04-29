@@ -1,0 +1,384 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+label::after{
+  content: ' *';
+  color: red;
+  font-size: 20px;
+}
+#download{
+  background-color: black;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.roles-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.rolesBorder{
+  border-style: dotted;
+  color: #4671EA;
+}
+.roleDet{
+  color: darkgoldenrod;
+}
+.description-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 100%;
+  max-height: 100px;
+  overflow-y: auto;
+}
+.description-list li {
+  color: blue;
+  padding: 15px;
+  width: calc(100% - 20px);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.roles-list li {
+color: blue;
+  padding: 15px;
+  width: calc(100% - 30px);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(130, 106, 251);
+  font-family: Arial, sans-serif;
+
+  margin: 0;
+
+
+}
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.input-box {
+  width: 100%;
+  border: 3px solid lightskyblue;
+  padding: 10px;
+  color: darkgoldenrod;
+  margin-bottom: 10px;
+}
+.input-box label {
+  color: darkgoldenrod;
+}
+#buttonAndH{
+  display: inline-block;
+  width:500px;
+}
+#buttonAndH h4{
+  width:40%;
+  height: 100%;
+  float: left;
+}
+#buttonAndH button{
+  width:10%;
+  height: 100%;
+  float: left;
+}
+
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+#formButton {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+}
+#educationShow{
+  margin-left: 20px;
+}
+
+#qualification{
+  margin-left: 30px;
+  color: olivedrab;
+}
+#workRoles{
+  margin-left: 50px;
+}
+ul#workRoles{
+  list-style-type: circle;
+}
+#uniSkills{
+  margin-left: 50px;
+  color: blue;
+}
+ul#uniSkills{
+  list-style-type: circle;
+}
+ul#qualification{
+   list-style-type: circle;
+ }
+ul#educationShow{
+  list-style-type: circle;
+}
+
+#formButton:hover {
+  background: rgb(88, 56, 250);
+}
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+#skillsText{
+  color: blue;
+}
+#requireText::after{
+  content: ' *';
+  color: red;
+  font-size: 20px;
+
+}
+#NotrequireText{
+  /*color: red;*/
+  font-size: 20px;
+
+}
+.wrapper{
+  width: 650px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 25px 25px 30px;
+  box-shadow: 8px 8px 10px rgba(0,0,0,0.06);
+}
+hr{
+  opacity: 0.8;
+  color: skyblue;
+  margin-top: 30px;
+}
+
+#moreButton {
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  width: 50%;
+  text-align: center;
+  margin-left: 160px;
+}
+#infoButton{
+  transition-duration: 0.4s;
+  border-radius: 2px;
+  width: 50%;
+  text-align: center;
+}
+
+#infoButton:hover {
+  background-color: blueviolet;
+  color: skyblue;
+}
+
+#moreButton:hover {
+  background-color: blueviolet; /* Green */
+  color: skyblue;
+}
+#addMores{
+  color:white;
+  background-color: blue;
+  height:40px;
+  transition-duration: 0.4s;
+  border-radius: 12px;
+  width: 40%;
+  text-align: center;
+  margin-top: 20px;
+margin-left: 3px;
+}
+#addMores:hover {
+  background-color: lightgreen; /* Green */
+  color: blue;
+}
+#addMore{
+  color:white;
+  background-color: blue;
+  height:40px;
+  transition-duration: 0.4s;
+  border-radius: 12px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+#addMore:hover {
+  background-color: lightgreen; /* Green */
+  color: blue;
+}
+.wrapper h2{
+  color: #4671EA;
+  font-size: 28px;
+  text-align: center;
+}
+#summaryCount{
+  margin-left: 560px;
+  text-align: right;
+  color: green;
+}
+.wrapper textarea{
+  width: 100%;
+  resize: none;
+  height: 300px;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  max-height: 330px;
+  caret-color: #4671EA;
+  border: 1px solid #bfbfbf;
+}
+#desButton{
+  max-height: 50px;
+}
+a textarea{
+  width: 100%;
+  resize: none;
+  height: 300px;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  max-height: 200px;
+  caret-color: #4671EA;
+  border: 1px solid #bfbfbf;
+}
+.column textarea{
+  width: 300%;
+  resize: none;
+  height: 300px;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  max-height: 200px;
+  caret-color: #4671EA;
+  border: 1px solid #bfbfbf;
+}
+.showstate textarea{
+  width: 100%;
+  resize: none;
+  height: 300px;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  max-height: 200px;
+  caret-color: #4671EA;
+  border: 1px solid #bfbfbf;
+}
+textarea::placeholder{
+  color: #b3b3b3;
+}
+#feedback{
+  color: red;
+}
+#feedbacks{
+  color: limegreen;
+}
+textarea:is(:focus, :valid){
+  padding: 14px;
+  border: 2px solid #4671EA;
+}
+textarea::-webkit-scrollbar{
+  width: 0px;
+}
+
